@@ -8,11 +8,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sciexplorer"
 version = "0.1.0"
-description = "Scientific experiment runner and analysis tools for LLMs"
+description = "SciExplorer builds on LLM APIs to create artificial scientist agents that can explore unknown systems by controlling experiments and running analysis code. "
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [
-  { name = "sciexplorer authors" }
+  {name = "Maximilian Nägele"},
+  {name = "Florian Marquardt"},
 ]
 # Runtime dependencies inferred from imports
 dependencies = [
@@ -30,7 +31,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/MaxNaeg/change_this"
+Homepage = "https://github.com/MaxNaeg/SciExplorer.git"
 [tool.setuptools]
 include-package-data = true
 
