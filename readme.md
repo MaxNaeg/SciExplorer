@@ -40,7 +40,7 @@ The tools provided to the agent enable automatic execution of LLM generated Pyth
 
 ## Results
 
-The results achieved using the SciExplorer are available in the GitHub repository XXX.
+The results obtained using the SciExplorer framework are available in the GitHub repository [SciExplorerResults](https://github.com/MaxNaeg/SciExplorerResults.git).
 
 
 
