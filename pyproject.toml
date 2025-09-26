@@ -1,0 +1,39 @@
+[build-system]
+requires = [
+  "setuptools>=68",
+  "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sciexplorer"
+version = "0.1.0"
+description = "Scientific experiment runner and analysis tools for LLMs"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "sciexplorer authors" }
+]
+# Runtime dependencies inferred from imports
+dependencies = [
+  "jax>=0.4",
+  "jaxlib>=0.4",
+  "numpy>=1.23",
+  "scipy>=1.9",
+  "matplotlib>=3.6",
+  "pillow>=9.5",
+  "diffrax>=0.5",
+  "optax>=0.1.7",
+  "flax>=0.7.0",
+  "IPython>=8.0",
+  "openai>=1.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/MaxNaeg/change_this"
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sciexplorer*"]
