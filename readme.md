@@ -8,7 +8,7 @@ To use it, install the package using 'pip install -e .' in the main directory of
 
 ## WARNING
 
-The tools provided to the agent enable automatic execution of LLM generated Python code. While we did not observe the agent acting malicious in our experiments, these tools should best be run in a save environment.
+The tools provided to the agent enable automatic execution of LLM generated Python code. While we did not observe the agent acting malicious in our experiments, these tools should best be run in a safe environment.
 
 
 
