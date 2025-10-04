@@ -2,7 +2,16 @@
 
 This repository contains the code for the SciExplorer framework. SciExplorer builds on LLM APIs to create artificial scientist agents that can explore unknown systems by controlling experiments and running analysis code.
 
-To use it, install the package using 'pip install -e .' in the main directory of this repository.
+## Publication
+
+SciExplorer was introduced and used in the following publication (please cite if you start using SciExplorer):
+
+Maximilian Nägele, Florian Marquardt: "Agentic Exploration of Physics Models", arXiv:2509.24978 https://arxiv.org/abs/2509.24978
+
+
+## Installation
+
+To use the sciexplorer module, install the package using 'pip install -e .' in the main directory of this repository.
 
 
 
