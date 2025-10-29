@@ -1,0 +1,115 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.pyd
+*.dll
+
+# Distribution / packaging
+.Python
+build/
+dist/
+wheelhouse/
+develop-eggs/
+.eggs/
+parts/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.noseids
+coverage.xml
+*.cover
+*.py,cover
+hypothesis/
+.hypothesis/
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.pyright/
+
+# Linters/formatters
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Virtual environments
+.env
+.env.*
+.venv
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Logs
+*.log
+logs/
+*.out
+
+# Databases
+*.sqlite3
+
+# Sphinx / docs
+docs/_build/
+
+# IDEs and editors
+.idea/
+.vscode/
+.history/
+.spyproject/
+.spyderproject
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# C/C++ artifacts (sometimes present)
+*.o
+*.obj
+*.a
+*.lib
+*.dylib
+*.exp
+*.idb
+*.pdb
+*.mod
+*.dll.a
+
+# Local secrets (avoid committing keys/certs)
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12

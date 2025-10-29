@@ -9,29 +9,20 @@ from.tool_utils import array_tool_wrapper
 import jax
 import numpy as np
 from .tool_utils import ImageData
-import multiprocessing
 from sciexplorer.tool_utils import get_image
 import concurrent.futures
 import copy
-import signal
-
-# Define a timeout handler
-def handler(signum, frame):
-    raise TimeoutError("Function call timed out")
-
 
 TIMEOUT = 30 #30 for all others -> increase for other hioddens?
 def run_with_timeout(func, args=(), kwargs={}, timeout=TIMEOUT):
-    signal.signal(signal.SIGALRM, handler)
-    signal.alarm(timeout)  # Set the timeout to the specified value
-    try:
-        # Call your long-running SciPy function here
-        result = func(*args, **kwargs)
-        signal.alarm(0)  # Cancel the alarm if finished in time
-        return result
-    except TimeoutError:
-        print("--Function timed out!--")
-        return {"error": f"Function {func.__name__} timed out after {timeout} seconds."}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(func, *args, **kwargs)
+        try:
+            result = future.result(timeout=timeout)
+            return result
+        except concurrent.futures.TimeoutError:
+            print("--Function timed out!--")
+            return {"error": f"Function {func.__name__} timed out after {timeout} seconds."}
 
 def get_description(field, print_all=False) -> str:
         if print_all:
