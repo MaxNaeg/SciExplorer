@@ -19,13 +19,12 @@ authors = [
 dependencies = [
   "jax>=0.4",
   "jaxlib>=0.4",
-  "numpy>=1.23",
+  "numpy>=2.0",
   "scipy>=1.9",
   "matplotlib>=3.6",
   "pillow>=9.5",
   "diffrax>=0.5",
   "optax>=0.1.7",
-  "flax>=0.7.0",
   "IPython>=8.0",
   "openai>=1.0"
 ]
