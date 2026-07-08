@@ -6,7 +6,7 @@ This repository contains the code for the SciExplorer framework. SciExplorer bui
 
 SciExplorer was introduced and used in the following publication (please cite if you start using SciExplorer):
 
-Maximilian Nägele, Florian Marquardt: "Agentic Exploration of Physics Models", arXiv:2509.24978 https://arxiv.org/abs/2509.24978
+Maximilian Nägele, Florian Marquardt: "Agentic Exploration of Physics Models", Phys. Rev. X 16, https://doi.org/10.1103/xnqc-q6nt
 
 ## WARNING
 
